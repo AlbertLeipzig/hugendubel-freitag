@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { AiOutlineUser } from 'react-icons/ai';
 
@@ -22,8 +23,15 @@ Geschenke & Trends
 SALE² */
 
 export const Header = () => {
+  const [buttonStatus, setButtonStatus] = useState(true);
   return (
     <header>
+      <button
+        style={{ backgroundColor: buttonStatus ? 'green' : 'red' }}
+        onClick={() => setButtonStatus(!buttonStatus)}
+      >
+        Click Me
+      </button>
       <nav>
         <ul>
           <li>
