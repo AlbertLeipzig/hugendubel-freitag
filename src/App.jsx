@@ -1,11 +1,10 @@
+import { Outlet } from 'react-router-dom';
 import { Header } from './components/Header';
-function App() {
+export const App = () => {
   return (
     <>
       <Header />
-      <h1>Hello There from App</h1>
+      <Outlet />
     </>
   );
-}
-
-export default App;
+};

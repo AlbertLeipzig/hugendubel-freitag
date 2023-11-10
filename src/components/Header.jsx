@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import {AiOutlineUser} from "react-icons/ai"
+import { AiOutlineUser } from 'react-icons/ai';
 
 /* top nav bar with 3 links : [Bücher versandkostenfrei*100 Tage RückgaberechtAbholung in der Wunschfiliale]
 company logo
@@ -44,23 +44,18 @@ export const Header = () => {
         <nav>
           <ul>
             <li>
-              <NavLink>
-                <div>Filiale</div>
+              <NavLink to="/">
+                <div>Home</div>
               </NavLink>
             </li>
             <li>
-              <NavLink>
-                <div>Konto</div>
+              <NavLink to="/contact">
+                <div>Contact</div>
               </NavLink>
             </li>
             <li>
-              <NavLink>
-                <div>Merkzettel</div>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink>
-                <div>Warenkorb</div>
+              <NavLink to="/books">
+                <div>Bücher</div>
               </NavLink>
             </li>
           </ul>
